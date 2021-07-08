@@ -28,6 +28,11 @@
 
 // Modbus-RTU Command
 byte Command_Modbus[8] = {0x01,0x04,0x30,0x00,0x00,0x0B,0xBE,0xCD}; 
+// [Modbus address convention]
+// The usage of the Modbus address (0x3000 = 12288) in "Command_Modbus[8]" does not follow the traditional Modbus address convention.
+// Convention: discrete input numbers (1 bit (off/on), 0 or 1) start with 1 and span from 10001 to 19999.
+// The users are suggested to design the system following the address convention (or following the device's address convention).
+// Ref: https://en.wikipedia.org/wiki/Modbus
 
 // Modbus-RTU Data
 struct ByteArray { 
