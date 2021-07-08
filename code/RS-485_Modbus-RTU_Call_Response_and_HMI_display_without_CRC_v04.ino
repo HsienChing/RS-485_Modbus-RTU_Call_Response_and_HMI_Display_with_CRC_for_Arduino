@@ -20,6 +20,8 @@
 
 #define HMI_Serial   Serial1 // Assign serial port
 #define RS485_Serial Serial3 // Assign serial port
+// The example program about the assigned serial can be found in the Ref.
+// Ref: https://github.com/HsienChing/Example_Code_Arduino/blob/main/code/Serial_Passthrough_by_the_Assigned_Serial.ino
 
 byte Command_Modbus[8] = {0x01,0x04,0x30,0x00,0x00,0x0B,0xBE,0xCD}; // Modbus-RTU Command
 byte Data_Modbus[27];                                               // Modbus-RTU Data
