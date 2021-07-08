@@ -13,9 +13,9 @@
     1. A "RS-485 to TTL module" is used to convert the RS-485 signal because Arduino MEGA 2560 Rev3 does not support RS-485 directly.
     2. A HMI with the UART interface is used to show the device responses through the Serial2 channel of the Arduino.
     
-  Date: 6 July 2021
+  Date:   6 July 2021
   Author: Dr. Hsien-Ching Chung
-  ORCID: https://orcid.org/0000-0001-9364-8858
+  ORCID:  https://orcid.org/0000-0001-9364-8858
 */
 
 byte Command_Modbus[8] = {0x01,0x04,0x30,0x00,0x00,0x0B,0xBE,0xCD}; // Modbus-RTU Command
