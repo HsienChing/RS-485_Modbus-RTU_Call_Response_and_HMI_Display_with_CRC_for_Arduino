@@ -86,7 +86,7 @@ Ref: https://github.com/othneildrew/Best-README-Template/edit/master/README.md
 # About the project
 
 The Arduino board is used to communicate with the external device through RS-485 Modbus-RTU. 
-The device responses are resolved by the Arduino and outputted to the human-machine interface (HMI).
+The device responses are resolved by the Arduino with cyclic redundancy check (CRC) and outputted to the human-machine interface (HMI).
 
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
@@ -123,9 +123,13 @@ To get a local copy up and running follow these simple example steps.
 # Usage
 The codes are in the [code](code) directory.
 
-| #    | Sketch name                                                                                        | Date       |
+| #    | Sketch name and key differences                                                                                    | Date       |
 | ---- | -------------------------------------------------------------------------------------------------- | ---------- |
-|    1 | [Under construction]()                               | 2021-07-00 |
+|    5 | Name: <br/> [RS-485_Modbus-RTU_Call_Response_and_HMI_display_with_CRC.ino](code/RS-485_Modbus-RTU_Call_Response_and_HMI_display_with_CRC.ino) <br/> Difference: <br/> CRC added. <br/> `#define HMI_Serial   Serial1 // Assign serial port` <br/>  `#define RS485_Serial Serial3 // Assign serial port` | 2021-07-08 |
+|    4 | Name: <br/> [RS-485_Modbus-RTU_Call_Response_and_HMI_display_without_CRC_v04.ino](code/RS-485_Modbus-RTU_Call_Response_and_HMI_display_without_CRC_v04.ino) <br/> Difference: <br/>  `#define HMI_Serial   Serial1 // Assign serial port` <br/>  `#define RS485_Serial Serial3 // Assign serial port` | 2021-07-07 |
+|    3 | Name: <br/> [RS-485_Modbus-RTU_Call_Response_and_HMI_display_without_CRC_v03.ino](code/RS-485_Modbus-RTU_Call_Response_and_HMI_display_without_CRC_v03.ino) <br/> Difference: <br/>  `Serial1.begin(  9600);  // Serial3 for RS-485 to TTL` <br/>  `Serial2.begin(115200);  // Serial1 for HMI with UART interface` | 2021-07-06 |
+|    2 | Name: <br/> [RS-485_Modbus-RTU_Call_Response_and_HMI_display_without_CRC_v02.ino](code/RS-485_Modbus-RTU_Call_Response_and_HMI_display_without_CRC_v02.ino) <br/> Difference: <br/>  `Serial1.begin(  9600);  // Serial3 for RS-485 to TTL` <br/>  `Serial2.begin(115200);  // Serial2 for HMI with UART interface` | 2021-07-06 |
+|    1 | Name: <br/> [RS-485_Modbus-RTU_Call_Response_and_HMI_display_without_CRC_v01.ino](code/RS-485_Modbus-RTU_Call_Response_and_HMI_display_without_CRC_v01.ino) <br/> Difference: <br/>  `Serial1.begin(  9600);  // Serial1 for RS-485 to TTL` <br/>  `Serial2.begin(115200);  // Serial2 for HMI with UART interface` | 2021-07-06 |
 
 
 
@@ -144,7 +148,7 @@ Author: Dr. Hsien-Ching Chung
 
 ORCID: https://orcid.org/0000-0001-9364-8858
 
-Project Link: [https://github.com/HsienChing/RS-485_Modbus-RTU_Call_Response_and_HMI_Display_with_CRC](https://github.com/HsienChing/RS-485_Modbus-RTU_Call_Response_and_HMI_Display_with_CRC)
+Project Link: [https://github.com/HsienChing/RS-485_Modbus-RTU_Call_Response_and_HMI_Display_with_CRC_for_Arduino](https://github.com/HsienChing/RS-485_Modbus-RTU_Call_Response_and_HMI_Display_with_CRC_for_Arduino)
 
 
 
