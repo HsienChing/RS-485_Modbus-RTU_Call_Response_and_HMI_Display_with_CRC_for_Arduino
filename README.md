@@ -167,7 +167,7 @@ Project Link: [https://github.com/HsienChing/RS-485_Modbus-RTU_Call_Response_and
 * [JVectorMap](http://jvectormap.com)
 * [Font Awesome](https://fontawesome.com)
 -->
-H.C. Chung thanks all the contributors to this article for their valuable discussions and recommendations, especially Jung-Feng Lin, Hsiao-Wen Yang, Yen-Kai Lo, An-De Andrew Chung.
+H.C. Chung thanks all the contributors to this project for their valuable discussions and recommendations, especially Jung-Feng Lin, Hsiao-Wen Yang, Yen-Kai Lo, An-De Andrew Chung.
 
 This work was supported in part by Super Double Power Technology Co., Ltd., Taiwan under grant SDP-RD-PROJ-001-2020.
 
