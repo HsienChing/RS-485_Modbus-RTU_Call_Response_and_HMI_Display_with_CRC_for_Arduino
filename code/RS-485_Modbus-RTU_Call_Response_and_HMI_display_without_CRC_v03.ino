@@ -16,6 +16,11 @@
   Date:   6 July 2021
   Author: Dr. Hsien-Ching Chung
   ORCID:  https://orcid.org/0000-0001-9364-8858
+  
+  Project Link: https://github.com/HsienChing/RS-485_Modbus-RTU_Call_Response_and_HMI_Display_with_CRC_for_Arduino
+  
+  License: MIT License
+  Copyright (c) 2021 Hsien-Ching Chung
 */
 
 byte Command_Modbus[8] = {0x01,0x04,0x30,0x00,0x00,0x0B,0xBE,0xCD}; // Modbus-RTU Command
